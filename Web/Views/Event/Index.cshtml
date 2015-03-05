@@ -1,0 +1,26 @@
+﻿@model List<Event>
+
+@{
+	ViewBag.Title = "Events";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Date</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (Event e in Model) {
+			<tr>
+				<td>@e.EventId</td>
+				<td>@e.EventDate.ToString("G")</td>
+				<td>@e.Description</td>
+			</tr>
+		}
+	</tbody>
+</table>
