@@ -24,3 +24,8 @@
 		}
 	</tbody>
 </table>
+
+@using (Html.BeginForm("NewMessage", "Event")) {
+	<input type="text" name="Content" placeholder="Content" />
+	<input type="submit" value="Add to Queue" />
+}
