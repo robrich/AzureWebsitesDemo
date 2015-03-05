@@ -11,7 +11,7 @@
 		}
 
 		public ActionResult About() {
-			this.ViewBag.Message = "Your application description page.";
+			this.ViewBag.Message = "The application description page.";
 
 			return this.View();
 		}
